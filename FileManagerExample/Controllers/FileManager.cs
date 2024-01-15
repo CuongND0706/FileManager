@@ -46,7 +46,7 @@ namespace FileManagerExample.Controllers
             else
             {
                 // Xử lý khi yêu cầu không thành công
-                Console.WriteLine($"Lỗi: {response.StatusCode}");
+                Console.WriteLine($"Lỗi cde: {response.StatusCode}");
                 return null;
             }
         }
