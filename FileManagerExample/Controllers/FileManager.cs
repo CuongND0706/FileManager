@@ -15,6 +15,7 @@ namespace FileManagerExample.Controllers
         [HttpGet(Name = "GetResource")]
         public async Task<List<ResourceOwner>> Get(string siteId)
         {
+            //todoo
             string apiUrl = "https://api.pre.earthbrain-pf.com/v2/resource_owners?type=Site&siteId="+siteId+"";
 
             using HttpClient client = new();
@@ -46,7 +47,7 @@ namespace FileManagerExample.Controllers
             else
             {
                 // Xử lý khi yêu cầu không thành công
-                Console.WriteLine($"Lỗi: {response.StatusCode}");
+                Console.WriteLine($"Lỗi abc: {response.StatusCode}");
                 return null;
             }
         }
